@@ -1,5 +1,5 @@
 import {responseTs} from '../src/my-date-parser-ts'
-import {responseJS} from '../src/my-date-parser'
+import {responseJS, takeVal} from '../src/my-date-parser'
 
 
 describe('Masala date integration ', ()=>{
@@ -12,5 +12,9 @@ describe('Masala date integration ', ()=>{
         expect(responseTs.isAccepted()).toBeTruthy()
     })
 
+
+    test('take js', ()=>{
+        expect(takeVal).toBe('<xxx>');
+    })
 
 })
